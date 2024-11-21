@@ -1,0 +1,24 @@
+<div class="app-container">
+  <!-- Header -->
+  <header class="header">
+    <h1>PaySky Charity</h1>
+  </header>
+
+  <!-- Map and Categories -->
+  <div class="content">
+    <!-- Map Container -->
+    <div id="map-id" class="map-container"></div>
+
+    <!-- Categories Panel -->
+    <div class="categories-panel">
+      <h2>Select Category</h2>
+      <button
+        *ngFor="let category of categories"
+        (click)="onCategorySelect(category)"
+        class="category-button"
+      >
+        {{ category.name }}
+      </button>
+    </div>
+  </div>
+</div>
